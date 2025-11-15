@@ -1,5 +1,3 @@
-# KaniBog-s-Portfolio
-Analytics Portfolio to begin with
 # 📉 Global Layoffs: A Deep Dive Into the Mass Job Cuts of 2020–2023  
 ### A Full SQL + Data Cleaning + Data Storytelling Case Study  
 *By TJ – Data Analyst / Banking & Finance Background*
