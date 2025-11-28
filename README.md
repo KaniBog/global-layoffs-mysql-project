@@ -126,33 +126,34 @@ Now the data is clean enough for the following sections of Explorotary Data Anal
 
 ---
 
-# 🏭 2. Industry-Level Analysis  
-**Which industries cut the deepest?**
+# 🏭 2. Industry-level Layoff Severity — Two Ways of Measuring the Same Story
+To understand: **Which industries cut the deepest?**, I looked at layoffs in two different ways: 
 
-This is NOT “who laid off the most people”.  
-This is **how much of their workforce they eliminated**, on average.
+
+
 
 ---
 
-## 📊 Average Percentage of Workforce Laid Off by Industry  
+## 1. Average % of Workforce Laid Off (Company-level Severity)
   
 ![Average Percentage Query](images/average_percentage_laid_off_query.png)
-
-## 📊 Results  
-
-| ![Average Percentage Results](images/average_percentage_laid_off_results.png) | ![Count vs Percent layoffs](images/Count%20vs%20Percentage%20Layoffs_Tableau.png) |
-|---|---|
-
+![Average Percentage Results](images/average_percentage_laid_off_results.png) 
 ---
 
-## 🧠 Insight  
+## 
+This metric shows how aggressively companies within each industry cut their staff. 
 - **Aerospace** → the most severe average layoffs (~29%)  
 - **Construction, Crypto, Energy, Food, Travel** → consistently high (19–22%)  
 - **Healthcare & Education** surprisingly high  
 - **Finance** still averages **~15% per event**
+  Industries like **Aerospace, Crypto, Travel, and Construction** have extremely high average percentage cuts because many companies inside them executed deep, structural layoffs. 
 
 Some industries don’t appear in the press much —  
 but their employees quietly faced **deeper cuts**.
+
+
+![Count vs Percent layoffs](images/Count%20vs%20Percentage%20Layoffs_Tableau.png) 
+
 
 ---
 
