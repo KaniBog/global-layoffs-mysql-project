@@ -140,8 +140,7 @@ This is **how much of their workforce they eliminated**, on average.
 
 ## 📊 Results  
 
-![Average Percentage Results](images/average_percentage_laid_off_results.png) | ![Count vs Percent layoffs](images
-/Count vs Percentage Layoffs_Tableau.png) |
+| ![Average Percentage Results](images/average_percentage_laid_off_results.png) | ![Count vs Percent layoffs](images/Count%20vs%20Percentage%20Layoffs_Tableau.png) |
 |---|---|
 
 ---
