@@ -65,7 +65,9 @@ This is real-world, practical business intelligence to have — not just data re
 
 ---
 
-# 📚 About the Dataset: download here 👉 [Raw Data (CSV)] (data/Raw_Global_layoffs_file.csv)
+# 📚 About the Dataset
+
+You can download the file here 👉: - [Raw Data (CSV)](data/Raw_Global_layoffs_file.csv)
 
 The dataset contains **global layoff events** with:
 
