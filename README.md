@@ -67,7 +67,7 @@ This is real-world, practical business intelligence — not just data results.
 
 # 📚 About the Dataset
 
-You can download the file here 👉: - [Raw Data (CSV)](data/Raw_Global_layoffs_file.csv)
+You can download the file here 👉 [Raw Data (CSV)](data/Raw_Global_layoffs_file.csv)
 
 The dataset contains **global layoff events** with:
 
@@ -95,7 +95,7 @@ So before analysis came **data cleaning**.
 
 ---
 
-#  1. DATA CLEANING STAGE 
+#  1. Data Cleaning Phase
 
 As any analysis, this dataset required cleaning, easily one of the most crucial parts for reliable insights.
 
@@ -127,16 +127,14 @@ Now the data is clean enough for the following sections of Exploratory Data Anal
 ---
 
 # 🏭 2. Industry-level Layoff Severity — Two Ways of Measuring the Same Story
-To understand: **Which industries cut the deepest?**, I looked at layoffs in two different ways: 
 ---
+To understand **which industries cut the deepest?**, I looked at layoffs in two different ways. 
 
-## 1. Average % of Workforce Laid Off (Company-level Severity)
+## First Way: Average % of Workforce Laid Off (Company-level Severity)
   
 ![Average Percentage Query](images/average_percentage_laid_off_query.png)
 ![Average Percentage Results](images/average_percentage_laid_off_results.png) 
 ---
-
-## 
 This metric shows how aggressively companies within each industry cut their staff. 
 - **Aerospace** → the most severe average layoffs (~29%)  
 - **Construction, Crypto, Energy, Food, Travel** → consistently high (19–22%)  
@@ -146,12 +144,13 @@ This metric shows how aggressively companies within each industry cut their staf
 *Key Takeaway:* Industries like **Aerospace, Crypto, Travel, and Construction** have extremely high average percentage cuts because many companies inside them executed deep, structural layoffs. 
 
 Revealing how intense layoffs were at the company level.
+
 ---
-## 2. Weighted Industry Layoff % (Industry-Wide Severity)
+## Second Way: Weighted Industry Layoff % (Industry-Wide Severity)
 
 ![Count vs Percent layoffs](images/Count%20vs%20Percentage%20Layoffs_Tableau.png) 
 
-##
+
 In this `Tableau` representation, I used Tableau’s calculated field interface to build a weighted percentage metric that adjusts for company size and reflects how much of each entire industry’s workforce was actually affected. The dataset includes company-level percentages (for example, one company might lay off 40% while another lays off 100%), but simply averaging these values can distort the true picture.
 
 Instead, I created a calculated field that weights each layoff event by the number of employees affected. This ensures that large-scale layoffs influence the results proportionally, while small startup collapses don’t overwhelm the analysis. The weighted metric provides a far more accurate representation of how deeply each industry was impacted overall, offering a much clearer sense of where the **deepest structural damage** occurred across the global economy.
@@ -159,13 +158,13 @@ Instead, I created a calculated field that weights each layoff event by the numb
 For example:
 
 - Crypto companies show many 80–100% layoffs (because small startups failed),
-BUT the weighted impact is only ~16%,
-meaning one out of six crypto jobs disappeared industry-wide.
+BUT the weighted impact is only ~26%,
+meaning one out of four crypto jobs disappeared industry-wide.
 
 - Large industries like Tech or Retail show lower weighted percentages
 but extremely high total layoffs — meaning layoffs were widespread but distributed.
 
-This metric reveals how deeply layoffs cut into the entire industry’s workforce, not just individual companies.
+To wrap up, this metric reveals how deeply layoffs cut into the entire industry’s workforce, not just individual companies.
 
 ---
 
@@ -173,22 +172,52 @@ This metric reveals how deeply layoffs cut into the entire industry’s workforc
 **Which countries experienced the highest TOTAL layoffs?**
 
 ---
-
-## 
 ![Country Totals Query](images/total_laid_off_by_country_query.png)
-
-##  
 ![Country Totals Results](images/total_laid_off_by_country_results.png)
 
 ---
 
-## Insight  
-- 🇺🇸 **United States** dominates with **~530k layoffs**  
-- 🇮🇳 India → ~61k  
-- 🇩🇪 Germany → ~31k  
-- 🇬🇧 UK, 🇳🇱 Netherlands, 🇦🇺 Australia, 🇨🇦 Canada, 🇮🇱 Israel also heavily impacted  
+## Layoffs by Country (Deeper Breakdown)
 
-The U.S. alone accounts for **60–70% of global layoffs**.
+- 🇺🇸 United States dominates with ~530,000 layoffs, far exceeding every other country in the dataset.
+The U.S. alone represents 60–70% of all global layoffs, driven primarily by large tech firms, venture-funded companies, and corporate restructurings after years of rapid expansion.
+- 🇮🇳 India follows with ~61,000 layoffs, reflecting the scale of its tech outsourcing sector and hiring freezes post-pandemic.
+- 🇩🇪 Germany (≈31k) and 🇬🇧 United Kingdom (≈29k) show significant cuts, mostly tied to financial services, auto manufacturing, and European recession pressures.
+- 🇳🇱 Netherlands, 🇦🇺 Australia, 🇨🇦 Canada, and 🇮🇱 Israel also experienced notable workforce reductions, especially in tech, fintech, and high-growth startups.
+---
+🔍 What These Numbers Actually Suggest
+The outsized U.S. layoffs aren’t just a reflection of company count—they’re a reflection of risk appetite and business model:
+- The U.S. has more tech giants and high-growth startups than any other country.
+- These companies scaled aggressively during 2020–2021, then rapidly downsized when macroeconomic conditions shifted.
+- The “hire fast → fire fast” cycle is structurally more common in the U.S. labor market compared to Europe or Asia.
+
+Meanwhile:
+- India’s layoff concentration mirrors its large IT and BPO workforce.
+- Germany’s cuts align with supply chain disruptions and declines in manufacturing output.
+- Israel and Canada both show layoffs tied to venture-capital–funded tech firms tightening spending.
+---
+
+🌍 Bigger Picture
+
+Layoffs aren’t evenly distributed—they cluster where tech innovation, venture capital, and rapid scaling occur.
+This means the countries with the most layoffs are also the ones with the highest density of:
+- tech startups
+- cloud/software companies
+- aggressive hiring during COVID
+- high-paid knowledge workers
+- companies dependent on investor confidence
+  
+Which all correlate with larger and more visible workforce reductions once growth slows.
+---
+🧠 Key Takeaway
+
+The U.S. dominating layoffs does not necessarily mean its economy is the weakest—it often reflects:
+- bigger tech sector
+- faster scaling
+- more aggressive restructuring
+- more companies reporting layoffs publicly
+  
+In contrast, layoffs in Europe and Asia tend to be smaller, slower, and more regulated, which keeps their numbers far below U.S. levels even during downturns.
 
 ---
 
@@ -196,16 +225,10 @@ The U.S. alone accounts for **60–70% of global layoffs**.
 Totals don’t show patterns — frequency and severity matter too.
 
 ---
-
-## 🖼 Query  
-![Country Health Query](images/country_health_query.png)
-
-## 🖼 Results  
+![Country Health Query](images/country_health_query.png)  
 ![Country Health Results](images/country_health_results.png)
 
 ---
-
-## 🧠 Insight  
 There are **two types of countries**:
 
 ### 1️⃣ High-volume cuts (many events, moderate severity)
@@ -226,16 +249,10 @@ This helps explain economic stability vs. fragility across regions.
 **Which years were the worst?**
 
 ---
-
-## 🖼 Query  
 ![Yearly Totals Query](images/total_laid_off_per_year_query.png)
-
-## 🖼 Results  
 ![Yearly Totals Results](images/total_laid_off_per_year_results.png)
 
 ---
-
-## 🧠 Insight  
 - **2023** → Worst year (~264k layoffs)  
 - **2022** → Second worst (~164k)  
 - **2024** → Still extremely high  
@@ -250,13 +267,9 @@ This shows layoffs not as events —
 but as a **growing global wave**.
 
 ---
-
-## 🖼 Screenshot  
 ![Rolling Totals Query + Results](images/rolling_total_month_&_year.png)
 
 ---
-
-## 🧠 Insight  
 The cumulative number climbs steadily every month.  
 Layoffs did **not** slow down — they compounded.
 
@@ -266,16 +279,10 @@ Layoffs did **not** slow down — they compounded.
 Which companies laid off the most staff in each year?
 
 ---
-
-## 🖼 Query  
 ![Company Ranking Query](images/company_ranking_query.png)
-
-## 🖼 Results  
 ![Company Ranking Results](images/company_ranking_results.png)
 
 ---
-
-## 🧠 Insight  
 - **2020** → Uber, Booking.com, Groupon  
 - **2021** → Bytedance, Zillow, Katerra  
 - **2022** → Meta (11k), Amazon (10k), Cisco  
@@ -289,16 +296,10 @@ Each year tells a different economic story.
 This is the list of companies that nearly **shut down**.
 
 ---
-
-## 🖼 Query  
 ![Collapse Query](images/highest_collapsing_companies_query.png)
-
-## 🖼 Results  
 ![Collapse Results](images/highest_collapsing_companies_results.png)
 
 ---
-
-## 🧠 Insight  
 Examples include:
 
 - **Flywheel Sports** — 98%  
