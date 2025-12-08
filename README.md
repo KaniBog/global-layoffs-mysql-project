@@ -478,7 +478,7 @@ Every row in this dataset represents a moment where something changed:
 Layoffs aren’t abstract events.  
 They ripple through households, communities, and entire industries.
 
-Working through this analysis showed me how SQL can turn raw, disorganized chaos into a structured story while Tableau uncovered hidden patterns in countless events. Together, they told the story that headlines often overlook — the lives behind the numbers
+Working through this analysis showed me how SQL can turn raw, disorganized chaos into a structured story, while Tableau uncovered hidden patterns in countless events. Together, they told the story that headlines often overlook — the lives behind the numbers
 
 ### Call To Action
 
