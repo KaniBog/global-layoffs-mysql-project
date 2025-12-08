@@ -480,7 +480,7 @@ They ripple through households, communities, and entire industries.
 
 Working through this analysis showed me how SQL can turn raw, disorganized chaos into a structured story while Tableau uncovered hidden patterns in countless events. Together, they told the story that headlines often overlook — the lives behind the numbers
 
-Call To Action
+### Call To Action
 
 I would love to hear your thoughts! Connect with me on LinkedIn, or if you or someone you know is looking to hire a data analyst, let’s talk! Feel free to reach out with your thoughts or questions.
 
