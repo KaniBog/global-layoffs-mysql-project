@@ -1,4 +1,4 @@
-# Global Layoffs SQL Case Study  
+
 ---
 
 ## 💬 Have You Ever Wondered What MASS Layoffs Really Look Like Behind the Scenes?
