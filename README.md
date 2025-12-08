@@ -490,27 +490,7 @@ it was a reminder of how interconnected data is with real people, real struggles
 
 ---
 
-# 📁 Repository Structure
 
-├── data/
-│   ├── Raw_Global_layoffs_file.csv       # Original dataset (uncleaned)
-│   ├── Clean_Global_layoffs_file.csv     # Cleaned dataset for analysis
-│
-├── images/                               # All SQL result screenshots + visualizations
-│   ├── first_staging_table.png
-│   ├── staging_table_insert.png
-│   ├── removing_duplicates.png
-│   ├── average_percentage_laid_off_query.png
-│   ├── average_percentage_laid_off_results.png
-│   ├── Count vs Percentage Layoffs_Tableau.png
-│   ├── total_laid_off_by_country_query.png
-│   ├── total_laid_off_by_country_results.png
-│   ├── country_health_query.png
-│   ├── country_health_results.png
-│   ├── total_laid_off_per_year_query.png
-│   ├── total_laid_off_per_year_results.png
-│   ├── rolling_total_month_&_year.png
-│   ├── company_ranking_query.png
 │   ├── company_ranking_results.png
 │   ├── highest_collapsing_companies_query.png
 │   ├── highest_collapsing_companies_results.png
